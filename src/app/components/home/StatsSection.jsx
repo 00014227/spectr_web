@@ -8,6 +8,7 @@ const StatsSection = () => {
   const [isVisible, setIsVisible] = useState(false); // Track if section is visible
 
   useEffect(() => {
+    const element = statsRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -17,13 +18,13 @@ const StatsSection = () => {
       { threshold: 0.5 } // Trigger when 50% of the section is visible
     );
 
-    if (statsRef.current) {
-      observer.observe(statsRef.current);
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (statsRef.current) {
-        observer.unobserve(statsRef.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
   }, []);

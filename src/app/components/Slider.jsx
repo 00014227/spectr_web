@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Mousewheel } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import Image from "next/image";
 
 const CaseSlider = () => {
   const slides = [
@@ -60,10 +61,12 @@ const CaseSlider = () => {
               <p className="text-sm text-gray-300">{slide.type}</p>
             </div>
             <div className="w-[300px] h-[400px] overflow-hidden rounded-lg relative swiper-slide-content">
-              <img
+              <Image
                 src={slide.image}
                 alt={slide.title}
                 className="object-cover w-full h-full"
+                width={300}
+                height={400}
               />
             </div>
           </SwiperSlide>
