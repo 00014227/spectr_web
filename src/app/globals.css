@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/astron');
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+
+}
+
+.font-evolventa {
+  font-family: Evolventa, sans-serif;
+	src: local("Evolventa"), url("./fonts/Evolventa-Regular.woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font-astron {
+  font-family: 'Astron', sans-serif;
+}
