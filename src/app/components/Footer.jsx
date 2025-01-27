@@ -6,42 +6,53 @@ import { FaInstagram, FaFacebook, FaTelegramPlane, FaPhoneAlt, FaEnvelope } from
 
 export default function Footer() {
   return (
-    <footer className="flex items-center w-10/12 justify-between py-12 mx-auto">
-      <div className="flex flex-col  justify-center w-fit">
-        <Image src="/logo_red.svg" alt="Spectr Logo" width={300} height={200} className="" />
-        <p className="mx-auto">marketing / branding / web / smm</p>
+<footer className="flex flex-col md:flex-row items-center w-11/12 justify-between py-8 mx-auto gap-8">
+  {/* Logo Section */}
+  <div className="flex flex-col items-center md:items-start justify-center w-full md:w-fit">
+    <Image
+      src="/logo_red.svg"
+      alt="Spectr Logo"
+      width={200}
+      height={150}
+      className="mx-auto md:mx-0"
+    />
+    <p className="text-center md:text-left">marketing / branding / web / smm</p>
+  </div>
+
+  {/* Contact Section */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full md:w-auto">
+    {/* First Column */}
+    <div className="space-y-4">
+      <div className="flex items-center space-x-3">
+        <FaInstagram size={20} />
+        <span className="text-base sm:text-lg">@spectr.marketing</span>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
-        <div className="space-y-4">
-          <div className="flex items-center space-x-4">
-            <FaInstagram size={24} />
-            <span className="text-xl">@spectr.marketing</span>
-          </div>
-          <div className="flex items-center space-x-4">
-            <FaTelegramPlane size={24} />
-            <span className="text-xl">@spectrmarketing</span>
-          </div>
-          <div className="flex items-center space-x-4">
-            <FaPhoneAlt size={24} />
-            <div>
-              <p className="text-xl">+99899-944-47-44</p>
-              <p className="text-xl">+99899-940-44-88</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="space-y-4">
-          <div className="flex items-center space-x-4">
-            <FaFacebook size={24} />
-            <span className="text-xl">@spectrmarketing</span>
-          </div>
-          <div className="flex items-center space-x-4">
-            <FaEnvelope size={24} />
-            <span className="text-xl">spectragency@gmail.com</span>
-          </div>
+      <div className="flex items-center space-x-3">
+        <FaTelegramPlane size={20} />
+        <span className="text-base sm:text-lg">@spectrmarketing</span>
+      </div>
+      <div className="flex items-center space-x-3">
+        <FaPhoneAlt size={20} />
+        <div>
+          <p className="text-base sm:text-lg">+99899-944-47-44</p>
+          <p className="text-base sm:text-lg">+99899-940-44-88</p>
         </div>
       </div>
-    </footer>
+    </div>
+
+    {/* Second Column */}
+    <div className="space-y-4">
+      <div className="flex items-center space-x-3">
+        <FaFacebook size={20} />
+        <span className="text-base sm:text-lg">@spectrmarketing</span>
+      </div>
+      <div className="flex items-center space-x-3">
+        <FaEnvelope size={20} />
+        <span className="text-base sm:text-lg">spectragency@gmail.com</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
   )
 }

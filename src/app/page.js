@@ -98,13 +98,13 @@ export default function Home() {
 
       <section className="flex flex-col lg:flex-row items-center p-6 md:p-12 bg-black text-white">
         <Image src="/logo_red.svg" alt="Spectr Logo" width={300} height={200} className="transform lg:-rotate-90" />
-        <div className="flex-1">
-          <h2 className="text-3xl font-bold mb-4">О нас</h2>
-          <p className="text-2xl mb-6 2xl:w-[85%]">
+        <div className="flex-1 mt-3">
+          <h2 className="md:text-3xl text-xl font-bold mb-4">О нас</h2>
+          <p className="md:text-2xl text-base mb-6 2xl:w-[85%]">
             В маркетинговом агентстве Spectr мы верим, что каждая идея заслуживает того, чтобы её заметили. Мы создаём пространство для вашего бизнеса, где он может засиять.
           </p>
-          <h3 className="text-2xl font-bold mb-4">Кто мы?</h3>
-          <p className="text-2xl mb-8 2xl:w-[85%]">
+          <h3 className="md:text-2xl text-base font-bold mb-4">Кто мы?</h3>
+          <p className="md:text-2xl text-base mb-8 2xl:w-[85%]">
             Мы – команда профессионалов, увлечённых маркетингом, брендингом, SMM и веб-разработкой. Наш опыт, креативный подход и внимание к деталям помогают нам превращать бизнес-задачи в успешные кейсы.
           </p>
           <Link href="/about" className="border border-red-500 px-6 py-2 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2">

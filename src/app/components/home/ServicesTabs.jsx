@@ -48,8 +48,8 @@ export default function ServicesTabs() {
         transition={{ duration: 0.5 }}
         className="flex-1 md:pl-12"
       >
-        <h2 className="text-3xl font-bold mb-4">{services[activeTab].title}</h2>
-        <p className="text-lg mb-6">{services[activeTab].description}</p>
+        <h2 className="md:text-3xl text-xl font-bold mb-4">{services[activeTab].title}</h2>
+        <p className="md:text-lg text-base mb-6">{services[activeTab].description}</p>
         {services[activeTab].details && (
           <pre className="text-lg mb-8 whitespace-pre-wrap">
             {services[activeTab].details}

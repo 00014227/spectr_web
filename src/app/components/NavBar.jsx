@@ -10,7 +10,7 @@ const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center py-6 px-12 bg-none text-white">
+    <nav className="flex justify-between items-center py-6 md:px-12 px-4 bg-none text-white">
     <div className="flex-1">
       <Link href="/apply" className="border border-red-500 px-4 py-2 rounded hover:bg-red-500 transition duration-300 inline-flex items-center">
         Подать заявку <span className="ml-2 text-2xl text-red-500 hover:text-white"><IoChevronDownCircleOutline /></span>
