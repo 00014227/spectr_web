@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 function InfoAbout({ values }) {
     return (
         <motion.section
-            className="flex flex-col justify-center mx-auto relative z-10 max-w-6xl"
+            className="flex flex-col justify-center md:px-0 px-2 mx-auto relative z-10 max-w-6xl"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -30,7 +30,7 @@ function InfoAbout({ values }) {
                 {values.sub_title}
             </motion.p>
             <motion.p
-                className="text-base sm:text-lg mb-8 w-[70%]"
+                className="text-base sm:text-lg mb-8 md:w-[70%] w-[90%]"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -54,7 +54,7 @@ function InfoAbout({ values }) {
                         </div>
                         <div>
                             <h2 className="text-lg font-semibold mb-2">{item.title}</h2>
-                            <p className="text-xl w-[70%] mt-12">{item.paragraph}</p>
+                            <p className="text-base md:w-[70%] w-[90%] mt-12">{item.paragraph}</p>
                         </div>
                     </motion.div>
                 ))}

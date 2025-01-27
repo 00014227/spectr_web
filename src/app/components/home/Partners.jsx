@@ -43,7 +43,7 @@ const logo_whiteMembers = [
 
 export default function Partners() {
   return (
-    <div className="grid grid-cols-6 gap-0 mx-auto py-10 w-[70vw]">
+    <div className="grid grid-cols-6 gap-0 mx-auto py-10 lg:w-[70vw] w-[90vw]">
         {logo_whiteMembers.map((member, index) => (
             <div key={index} className=" border border-red-600">
                 <Image src={member.src} alt={member.alt} width={240} height={240}/>

@@ -64,7 +64,7 @@ export default function Home() {
             height={180}
             className="mb-6 object-contain"
           />
-          <div className="flex gap-24 text-xl mb-12">
+          <div className="flex lg:gap-24 gap-6 text-xl mb-12">
             <span className="hover:text-red-500 transition duration-300">marketing</span>
             <span className="hover:text-red-500 transition duration-300">branding</span>
             <span className="hover:text-red-500 transition duration-300">smm</span>
@@ -72,14 +72,18 @@ export default function Home() {
           </div>
           <div className="flex gap-12">
             <div className="flex flex-col items-center">
-              <button className="border border-red-500 px-6 py-2 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2">
-                Презентация <IoChevronDownCircleOutline className="text-2xl" />
+              <button className="border border-red-500 px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2 text-sm sm:text-base md:text-lg">
+                Презентация
+                <IoChevronDownCircleOutline className="text-xl sm:text-2xl md:text-3xl" />
               </button>
+
             </div>
             <div className="flex flex-col items-center">
-              <button className="border border-red-500 px-6 py-2 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2">
-                Прайслист <IoChevronDownCircleOutline className="text-2xl" />
+              <button className="border border-red-500 px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2 text-sm sm:text-base md:text-lg">
+                Прайслист
+                <IoChevronDownCircleOutline className="text-xl sm:text-2xl md:text-3xl" />
               </button>
+
             </div>
           </div>
         </div>
@@ -92,8 +96,8 @@ export default function Home() {
 
 
 
-      <section className="flex flex-col md:flex-row items-center p-6 md:p-12 bg-black text-white">
-        <Image src="/logo_red.svg" alt="Spectr Logo" width={300} height={200} className="transform md:-rotate-90" />
+      <section className="flex flex-col lg:flex-row items-center p-6 md:p-12 bg-black text-white">
+        <Image src="/logo_red.svg" alt="Spectr Logo" width={300} height={200} className="transform lg:-rotate-90" />
         <div className="flex-1">
           <h2 className="text-3xl font-bold mb-4">О нас</h2>
           <p className="text-2xl mb-6 2xl:w-[85%]">
@@ -110,11 +114,11 @@ export default function Home() {
       </section>
       <StatsSection />
       <ServicesTabs />
-      <TeamSection teamMembers={teamMembers} header = {'Наша команда'} />
-      <Partners/>
-      <CaseSlider/>
-      <ContactForm/>
-      <Footer/>
+      {/* <TeamSection teamMembers={teamMembers} header = {'Наша команда'} /> */}
+      <Partners />
+      {/* <CaseSlider/> */}
+      <ContactForm />
+      <Footer />
     </div>
   );
 }

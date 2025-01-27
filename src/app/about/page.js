@@ -98,7 +98,7 @@ function About() {
     return (
         <div className=" bg-black h-auto">
             {/* Background Layer with Pseudo-Element */}
-            <div className="relative">
+            <div className="relative md:px-0 px-2">
 
           
             <div className="absolute inset-0 bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:bg-[url('/about_bg.png')] before:rotate-120  before:opacity-10"></div>
@@ -107,7 +107,7 @@ function About() {
             <div className="relative  z-10 space-y-20">
                 <NavBar />
                 <motion.div
-            className="flex flex-col justify-center 2xl:max-w-7.5xl max-w-7.5xl mx-auto text-center px-32 sm:text-left"
+            className="flex flex-col justify-center 2xl:max-w-7.5xl max-w-7.5xl mx-auto text-center lg:px-32 px-2 sm:text-left"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -131,7 +131,7 @@ function About() {
                 Добро пожаловать в Spectr
             </motion.h2>
             <motion.p
-                className="2xl:text-2xl text-lg sm:text-xl mb-6"
+                className="2xl:text-2xl text-base sm:text-xl mb-6"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -150,7 +150,7 @@ function About() {
                 Почему выбирают нас:
             </motion.h3>
             <motion.ul
-                className="list-disc list-inside 2xl:text-2xl text-lg sm:text-xl pl-10"
+                className="list-disc list-inside 2xl:text-2xl text-base sm:text-xl md:pl-10"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -161,6 +161,7 @@ function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.2 }}
+                    
                 >
                     Команда профессионалов:
                 </motion.li>
@@ -216,7 +217,7 @@ function About() {
                 Наша философия
             </motion.h3>
             <motion.p
-                className="2xl:text-2xl text-lg sm:text-xl"
+                className="2xl:text-2xl text-base sm:text-xl"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}

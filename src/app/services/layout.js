@@ -5,7 +5,7 @@ export default function ServiceLayout({ children }) {
     return (
       <html lang="en">
         <body>
-            <NavBar/>
+            {/* <NavBar/> */}
           {children}
         </body>
       </html>

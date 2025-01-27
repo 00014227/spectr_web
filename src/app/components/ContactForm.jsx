@@ -11,10 +11,10 @@ export default function ContactForm() {
                 <p>marketing / branding / web / smm</p>
             </div>
 
-            <div className="flex justify-between">
-                <p className=" text-2xl 2xl:w-[50%] lg:w-2/3 w-[40%]">Наша команда всегда готова к новым проектам, оставляйте заявку, и мы скоро свяжемся с вами!</p>
+            <div className="flex md:flex-row flex-col space-y-8  justify-between">
+                <p className=" text-2xl 2xl:w-[50%] lg:w-2/3 w-auto">Наша команда всегда готова к новым проектам, оставляйте заявку, и мы скоро свяжемся с вами!</p>
                 <button
-                    className="relative px-20 py-3 uppercase bg-black text-white font-medium text-lg rounded-lg transition-transform duration-300 hover:bg-red-800 hover:scale-105"
+                    className="relative px-12 sm:px-16 md:px-20 py-6 sm:py-3 md:py-4 uppercase bg-black text-white font-medium text-sm sm:text-base md:text-lg rounded-lg transition-transform duration-300 hover:bg-red-800 hover:scale-105"
                     style={{
                         boxShadow:
                             "inset -5px -5px 10px rgba(245, 39, 50, 0.8), inset 5px 5px 10px rgba(0, 0, 0, 0.7)",
@@ -22,6 +22,7 @@ export default function ContactForm() {
                 >
                     позвонить
                 </button>
+
             </div>
 
             <form className="grid grid-cols-1 md:grid-cols-3 gap-20 w-full mb-7">
