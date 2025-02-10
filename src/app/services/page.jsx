@@ -145,18 +145,21 @@ export default function Services() {
         {services.map((service, index) => (
           <div key={service.id} className="pb-6 mb-6 last:border-b-0">
             <div className="flex items-center justify-between">
-              <div className="flex gap-12">
+              <div className="md:flex block gap-12">
                 <div className="flex gap-4">
                   <span className="text-white text-4xl font-bold">
                     {service.id.toString().padStart(2, "0")}
                   </span>
                   <div className="w-px h-16 bg-red-500"></div>
-                </div>
-                <div className="max-w-4xl">
-                  <h2 className="text-4xl font-bold text-red-500">
+                  <h2 className=" block md:hidden text-4xl font-bold text-red-500">
                     {service.title}
                   </h2>
-                  <p className="text-gray-300 mt-8 text-xl italic">
+                </div>
+                <div className="max-w-4xl">
+                  <h2 className="md:block hidden text-4xl font-bold text-red-500">
+                    {service.title}
+                  </h2>
+                  <p className="text-gray-300 md:block hidden mt-8 text-xl italic">
                     {service.description}
                   </p>
                   {activeIndex === index && (
@@ -190,11 +193,22 @@ export default function Services() {
                     </MotionDiv>
 
                   )}
-
+              
                 </div>
+                <p className="text-gray-300 md:hidden block mt-8 text-xl italic">
+                    {service.description}
+                  </p>
+
+                  <button
+                className="text-gray-300 md:hidden flex justify-end mt-2 items-center gap-2 hover:text-red-500 ml-auto"
+                onClick={() => toggleContent(index)}
+              >
+                Подробнее
+                <IoIosArrowDropdown />
+              </button>
               </div>
               <button
-                className="text-gray-300 flex justify-center items-center gap-2 hover:text-red-500 ml-4"
+                className="text-gray-300 md:flex hidden justify-center items-center gap-2 hover:text-red-500 ml-4"
                 onClick={() => toggleContent(index)}
               >
                 Подробнее
