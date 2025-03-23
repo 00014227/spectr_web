@@ -89,14 +89,7 @@ export default function Home() {
         </div>
       </div>
 
-
-
-
-
-
-
-
-      <section className="flex flex-col lg:flex-row items-center p-6 md:p-12 bg-black text-white">
+      <section className="flex flex-col lg:flex-row  p-6 md:p-12 bg-black text-white">
         <Image src="/logo_red.svg" alt="Spectr Logo" width={300} height={200} className="transform lg:-rotate-90" />
         <div className="flex-1 mt-3">
           <h2 className="md:text-3xl text-xl font-bold mb-4">О нас</h2>
