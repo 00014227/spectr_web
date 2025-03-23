@@ -4,7 +4,9 @@ import "./globals.css";
 const evolventaFont = localFont({
   src: "./fonts/Evolventa-Regular.woff",
   variable: "--font-evolventa",
-  weight: "100 900",
+  weight: "normal",
+  style: 'normal',
+
 });
 
 export const metadata = {

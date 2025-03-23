@@ -62,7 +62,7 @@ const StatsSection = () => {
         initial={{ opacity: 0 }}
         animate={isVisible ? { opacity: 1 } : {}}
         transition={{ duration: 0.5 }}
-        className="text-4xl md:text-5xl font-evolventa text-red-500 font-evolventa"
+        className="text-4xl md:text-5xl text-red-500 font-evolventa"
       >
         {value}
         {suffix}

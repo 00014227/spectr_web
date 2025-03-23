@@ -16,7 +16,7 @@ export default function Footer() {
       height={150}
       className="mx-auto md:mx-0"
     />
-    <p className="text-center md:text-left font-evolventa">marketing / branding / web / smm</p>
+    <p className="text-center text-white md:text-left font-evolventa">marketing / branding / web / smm</p>
   </div>
 
   {/* Contact Section */}
@@ -24,18 +24,18 @@ export default function Footer() {
     {/* First Column */}
     <div className="space-y-4">
       <div className="flex items-center space-x-3">
-        <FaInstagram size={20} />
-        <span className="text-base sm:text-lg font-evolventa">@spectr.marketing</span>
+        <FaInstagram className=' text-white' size={20} />
+        <span className="text-base text-white sm:text-lg font-evolventa">@spectr.marketing</span>
       </div>
       <div className="flex items-center space-x-3">
-        <FaTelegramPlane size={20} />
-        <span className="text-base sm:text-lg font-evolventa">@spectrmarketing</span>
+        <FaTelegramPlane className=' text-white' size={20} />
+        <span className="text-base text-white sm:text-lg font-evolventa">@spectrmarketing</span>
       </div>
       <div className="flex items-center space-x-3">
-        <FaPhoneAlt size={20} />
+        <FaPhoneAlt className=' text-white' size={20} />
         <div>
-          <p className="text-base sm:text-lg font-evolventa">+99899-944-47-44</p>
-          <p className="text-base sm:text-lg font-evolventa">+99899-940-44-88</p>
+          <p className="text-base text-white sm:text-lg font-evolventa">+99899-944-47-44</p>
+          <p className="text-base text-white sm:text-lg font-evolventa">+99899-940-44-88</p>
         </div>
       </div>
     </div>
@@ -43,12 +43,12 @@ export default function Footer() {
     {/* Second Column */}
     <div className="space-y-4">
       <div className="flex items-center space-x-3">
-        <FaFacebook size={20} />
-        <span className="text-base sm:text-lg font-evolventa">@spectrmarketing</span>
+        <FaFacebook className=' text-white' size={20} />
+        <span className="text-base text-white sm:text-lg font-evolventa">@spectrmarketing</span>
       </div>
       <div className="flex items-center space-x-3">
-        <FaEnvelope size={20} />
-        <span className="text-base sm:text-lg font-evolventa">spectragency@gmail.com</span>
+        <FaEnvelope className=' text-white' size={20} />
+        <span className="text-base text-white sm:text-lg font-evolventa">spectragency@gmail.com</span>
       </div>
     </div>
   </div>
