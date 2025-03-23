@@ -62,7 +62,7 @@ const StatsSection = () => {
         initial={{ opacity: 0 }}
         animate={isVisible ? { opacity: 1 } : {}}
         transition={{ duration: 0.5 }}
-        className="text-4xl md:text-5xl font-evolventa text-red-500"
+        className="text-4xl md:text-5xl font-evolventa text-red-500 font-evolventa"
       >
         {value}
         {suffix}
@@ -77,23 +77,23 @@ const StatsSection = () => {
     >
       <div className="w-full sm:w-1/2 md:w-auto flex flex-col items-center mb-6 md:mb-0">
         <AnimatedNumber target={1000} duration={2000} suffix="+" />
-        <span className="text-lg md:text-2xl">кейсов</span>
+        <span className="text-lg md:text-2xl font-evolventa">кейсов</span>
       </div>
       <div className="w-full sm:w-1/2 md:w-auto flex flex-col items-center mb-6 md:mb-0">
         <AnimatedNumber target={100} duration={1500} suffix="+" />
-        <span className="text-lg md:text-2xl">клиентов</span>
+        <span className="text-lg md:text-2xl font-evolventa">клиентов</span>
       </div>
       <div className="w-full sm:w-1/2 md:w-auto flex flex-col items-center mb-6 md:mb-0">
         <AnimatedNumber target={1000000} duration={2500} suffix="+" />
-        <span className="text-lg md:text-2xl">креатива</span>
+        <span className="text-lg md:text-2xl font-evolventa">креатива</span>
       </div>
       <div className="w-full sm:w-1/2 md:w-auto flex flex-col items-center mb-6 md:mb-0">
         <AnimatedNumber target={100} duration={1500} suffix="%" />
-        <span className="text-lg md:text-2xl">гарантии и результата</span>
+        <span className="text-lg md:text-2xl font-evolventa">гарантии и результата</span>
       </div>
       <div className="w-full sm:w-1/2 md:w-auto flex flex-col items-center">
         <AnimatedNumber target={500} duration={2000} suffix="+" />
-        <span className="text-lg md:text-2xl">проектов</span>
+        <span className="text-lg md:text-2xl font-evolventa">проектов</span>
       </div>
     </div>
   );

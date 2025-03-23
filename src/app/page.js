@@ -65,21 +65,21 @@ export default function Home() {
             className="mb-6 object-contain"
           />
           <div className="flex lg:gap-24 gap-6 text-xl mb-12">
-            <span className="hover:text-red-500 transition duration-300">marketing</span>
-            <span className="hover:text-red-500 transition duration-300">branding</span>
-            <span className="hover:text-red-500 transition duration-300">smm</span>
-            <span className="hover:text-red-500 transition duration-300">web</span>
+            <span className="hover:text-red-500 transition duration-300 font-evolventa">marketing</span>
+            <span className="hover:text-red-500 transition duration-300 font-evolventa">branding</span>
+            <span className="hover:text-red-500 transition duration-300 font-evolventa">smm</span>
+            <span className="hover:text-red-500 transition duration-300 font-evolventa">web</span>
           </div>
           <div className="flex gap-12">
             <div className="flex flex-col items-center">
-              <button className="border border-red-500 px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2 text-sm sm:text-base md:text-lg">
+              <button className="font-evolventa border border-red-500 px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2 text-sm sm:text-base md:text-lg">
                 Презентация
                 <IoChevronDownCircleOutline className="text-xl sm:text-2xl md:text-3xl" />
               </button>
 
             </div>
             <div className="flex flex-col items-center">
-              <button className="border border-red-500 px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2 text-sm sm:text-base md:text-lg">
+              <button className="font-evolventa border border-red-500 px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2 text-sm sm:text-base md:text-lg">
                 Прайслист
                 <IoChevronDownCircleOutline className="text-xl sm:text-2xl md:text-3xl" />
               </button>
@@ -92,15 +92,15 @@ export default function Home() {
       <section className="flex flex-col lg:flex-row  p-6 md:p-12 bg-black text-white">
         <Image src="/logo_red.svg" alt="Spectr Logo" width={300} height={200} className="transform lg:-rotate-90" />
         <div className="flex-1 mt-3">
-          <h2 className="md:text-3xl text-xl font-bold mb-4">О нас</h2>
-          <p className="md:text-2xl text-base mb-6 2xl:w-[85%]">
+          <h2 className="font-evolventa md:text-3xl text-xl font-bold mb-4">О нас</h2>
+          <p className="font-evolventa md:text-2xl text-base mb-6 2xl:w-[85%]">
             В маркетинговом агентстве Spectr мы верим, что каждая идея заслуживает того, чтобы её заметили. Мы создаём пространство для вашего бизнеса, где он может засиять.
           </p>
-          <h3 className="md:text-2xl text-base font-bold mb-4">Кто мы?</h3>
-          <p className="md:text-2xl text-base mb-8 2xl:w-[85%]">
+          <h3 className="font-evolventa md:text-2xl text-base font-bold mb-4">Кто мы?</h3>
+          <p className="font-evolventa md:text-2xl text-base mb-8 2xl:w-[85%]">
             Мы – команда профессионалов, увлечённых маркетингом, брендингом, SMM и веб-разработкой. Наш опыт, креативный подход и внимание к деталям помогают нам превращать бизнес-задачи в успешные кейсы.
           </p>
-          <Link href="/about" className="border border-red-500 px-6 py-2 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2">
+          <Link href="/about" className="font-evolventa border border-red-500 px-6 py-2 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2">
             Подробнее <IoChevronDownCircleOutline className="text-2xl" />
           </Link>
         </div>
