@@ -113,7 +113,7 @@ function About() {
             transition={{ duration: 0.8 }}
         >
             <motion.h1
-                className="text-red-500 text-3xl sm:text-4xl font-bold mb-4"
+                className="text-red-500 font-evolventa text-3xl sm:text-4xl font-bold mb-4"
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -122,7 +122,7 @@ function About() {
                 О НАС
             </motion.h1>
             <motion.h2
-                className="text-lg sm:text-2xl 2xl:text-3xl italic mb-6"
+                className="text-lg sm:text-2xl font-evolventa 2xl:text-3xl italic mb-6 text-white"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -131,7 +131,7 @@ function About() {
                 Добро пожаловать в Spectr
             </motion.h2>
             <motion.p
-                className="2xl:text-2xl text-base sm:text-xl mb-6"
+                className="2xl:text-2xl text-base font-evolventa sm:text-xl mb-6 text-white"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -141,7 +141,7 @@ function About() {
             </motion.p>
 
             <motion.h3
-                className="2xl:text-3xl text-xl sm:text-2xl font-semibold mb-4"
+                className="2xl:text-3xl text-xl sm:text-2xl font-evolventa font-semibold mb-4 text-white"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -150,7 +150,7 @@ function About() {
                 Почему выбирают нас:
             </motion.h3>
             <motion.ul
-                className="list-disc list-inside 2xl:text-2xl text-base sm:text-xl md:pl-10"
+                className="list-disc list-inside 2xl:text-2xl font-evolventa text-base sm:text-xl md:pl-10 text-white"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -161,6 +161,7 @@ function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.2 }}
+                    className="font-evolventa text-white"
                     
                 >
                     Команда профессионалов:
@@ -170,6 +171,7 @@ function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
+                    className="font-evolventa text-white"
                 >
                     Мы собрали экспертов в области маркетинга, брендинга, SMM и веб-разработки. Каждый член команды вносит свой уникальный вклад, чтобы ваши проекты сияли.
                 </motion.li>
@@ -178,6 +180,8 @@ function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.4 }}
+                    className="font-evolventa text-white"
+
                 >
                     Индивидуальный подход:
                 </motion.li>
@@ -186,6 +190,8 @@ function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.5 }}
+                    className="font-evolventa text-white"
+
                 >
                     Мы верим, что каждый бизнес уникален. Вместе мы создаем решения, которые подойдут именно вам.
                 </motion.li>
@@ -194,6 +200,8 @@ function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.6 }}
+                    className="font-evolventa text-white"
+
                 >
                     Креативные идеи:
                 </motion.li>
@@ -202,13 +210,15 @@ function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.7 }}
+                    className="font-evolventa text-white"
+
                 >
                     Наше агентство черпает вдохновение в космосе, создавая идеи, которые выходят за пределы стандартов и формируют запоминающиеся бренды.
                 </motion.li>
             </motion.ul>
 
             <motion.h3
-                className="2xl:text-3xl text-xl sm:text-2xl font-semibold mt-8 mb-4"
+                className="2xl:text-3xl text-xl sm:text-2xl font-semibold font-evolventa mt-8 mb-4 text-white"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -217,7 +227,7 @@ function About() {
                 Наша философия
             </motion.h3>
             <motion.p
-                className="2xl:text-2xl text-base sm:text-xl"
+                className="2xl:text-2xl text-base font-evolventa sm:text-xl text-white"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -238,28 +248,28 @@ function About() {
             </div>
 
             <section className=" flex flex-col justify-center max-w-6xl space-y-10 mt-20 mx-auto">
-                <h2 className="text-red-500 text-3xl sm:text-4xl font-bold uppercase mb-4">Социяальная <br/> ответственность</h2>
+                <h2 className="text-red-500 text-3xl sm:text-4xl font-bold uppercase mb-4 font-evolventa">Социяальная <br/> ответственность</h2>
                 <div className="flex max-w-2xl space-x-16 items-center">
                     <Image className=" w-20 h-20" src="/about_icon1.png" width={120} height={100} alt="gweg"/>
                     <div className=" space-y-4">
-                        <h3 className=" text-white text-4xl">Финансовая поддержка</h3>
-                        <p className="text-white">Маркетинг-агентство &quot;Spectr&quot; регулярно выделяет деньги организациям благотворительности или конкретным проектам, которые соответствуют нашим ценностям и целям.</p>
+                        <h3 className=" text-white text-4xl font-evolventa">Финансовая поддержка</h3>
+                        <p className="text-white font-evolventa">Маркетинг-агентство &quot;Spectr&quot; регулярно выделяет деньги организациям благотворительности или конкретным проектам, которые соответствуют нашим ценностям и целям.</p>
                     </div>
                 </div>
 
                 <div className="flex max-w-2xl space-x-16 items-center">
                     <Image className=" w-20 h-20" src="/about_icon2.png" width={120} height={100} alt="gweg"/>
                     <div className=" space-y-4">
-                        <h3 className=" text-white text-4xl">Защита окружающей среды</h3>
-                        <p className="text-white">Маркетинг-агентство &quot;Spectr&quot; сосредоточила свои усилия на экологических и устойчивых инициативах, что помогает в сохранении окружающей среды.</p>
+                        <h3 className=" text-white text-4xl font-evolventa">Защита окружающей среды</h3>
+                        <p className="text-white font-evolventa">Маркетинг-агентство &quot;Spectr&quot; сосредоточила свои усилия на экологических и устойчивых инициативах, что помогает в сохранении окружающей среды.</p>
                     </div>
                 </div>
 
                 <div className="flex max-w-2xl space-x-16 items-center">
                     <Image className=" w-20 h-20" src="/about_icon3.png" width={120} height={100} alt="gweg"/>
                     <div className=" space-y-4">
-                        <h3 className=" text-white text-4xl">Образование</h3>
-                        <p className="text-white">Так же мы спонсируем образовательные программы или стипендии для молодых талантов, что способствует развитию и поддержке образования.</p>
+                        <h3 className=" text-white text-4xl font-evolventa">Образование</h3>
+                        <p className="text-white font-evolventa">Так же мы спонсируем образовательные программы или стипендии для молодых талантов, что способствует развитию и поддержке образования.</p>
                     </div>
                 </div>
 

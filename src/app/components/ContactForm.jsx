@@ -8,7 +8,7 @@ export default function ContactForm() {
         <section className="py-6 px-6 2xl:px-52 lg:px-32 space-y-8">
             <div className=" space-y-4">
                 <h3 className=" text-6xl text-red-500">есть проект!?</h3>
-                <p className=' text-white'>marketing / branding / web / smm</p>
+                <p className=' text-white font-evolventa'>marketing / branding / web / smm</p>
             </div>
 
             <div className="flex md:flex-row flex-col space-y-8  justify-between">
@@ -34,7 +34,7 @@ export default function ContactForm() {
                     <input
                         type="text"
                         placeholder="введите ваше имя"
-                        className="w-full px-6 text-xl py-6 text-white text-center bg-black rounded-lg placeholder-white placeholder:text-xl font-light focus:outline-none"
+                        className="w-full font-evolventa px-6 text-xl py-6 text-white text-center bg-black rounded-lg placeholder-white placeholder:text-xl font-light focus:outline-none"
                         style={{
                             boxShadow:
                                 "inset -5px -5px 10px rgba(245, 39, 50, 0.8), inset 5px 5px 10px rgba(0, 0, 0, 0.7)",
@@ -49,7 +49,7 @@ export default function ContactForm() {
                     <input
                         type="tel"
                         placeholder="введите номер телефона"
-                        className="w-full px-6 py-6 text-xl text-white text-center bg-black rounded-lg placeholder:text-xl placeholder-white font-light focus:outline-none"
+                        className="w-full font-evolventa px-6 py-6 text-xl text-white text-center bg-black rounded-lg placeholder:text-xl placeholder-white font-light focus:outline-none"
                         style={{
                             boxShadow:
                                 "inset -5px -5px 10px rgba(245, 39, 50, 0.8), inset 5px 5px 10px rgba(0, 0, 0, 0.7)",
@@ -64,7 +64,7 @@ export default function ContactForm() {
                     <input
                         type="text"
                         placeholder="введите название компании"
-                        className="w-full px-6 py-6 text-white text-xl text-center placeholder:text-xl bg-black rounded-lg placeholder-white font-light focus:outline-none"
+                        className="w-full px-6 font-evolventa py-6 text-white text-xl text-center placeholder:text-xl bg-black rounded-lg placeholder-white font-light focus:outline-none"
                         style={{
                             boxShadow:
                                 "inset -5px -5px 10px rgba(245, 39, 50, 0.8), inset 5px 5px 10px rgba(0, 0, 0, 0.7)",

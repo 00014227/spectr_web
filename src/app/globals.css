@@ -23,12 +23,6 @@ body {
 
 }
 
-.font-evolventa {
-  font-family: Evolventa, sans-serif;
-	src: local("Evolventa"), url("./fonts/Evolventa-Regular.woff");
-	font-weight: normal;
-	font-style: normal;
-}
 
 .font-astron {
   font-family: 'Astron', sans-serif;

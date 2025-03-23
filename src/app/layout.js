@@ -2,9 +2,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const evolventaFont = localFont({
-  src: "./fonts/Evolventa-Regular.woff",
+  src: "../../public/fonts/Evolventa-Regular.woff",
   variable: "--font-evolventa",
-  weight: "normal",
+  weight: "400",
   style: 'normal',
 
 });

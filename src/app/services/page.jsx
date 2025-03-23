@@ -147,19 +147,19 @@ export default function Services() {
             <div className="flex items-center justify-between">
               <div className="md:flex block gap-12">
                 <div className="flex gap-4">
-                  <span className="text-white text-4xl font-bold">
+                  <span className="text-white text-4xl font-bold font-evolventa">
                     {service.id.toString().padStart(2, "0")}
                   </span>
                   <div className="w-px h-16 bg-red-500"></div>
-                  <h2 className=" block md:hidden text-4xl font-bold text-red-500">
+                  <h2 className=" block md:hidden text-4xl font-bold text-red-500 font-evolventa">
                     {service.title}
                   </h2>
                 </div>
                 <div className="max-w-4xl">
-                  <h2 className="md:block hidden text-4xl font-bold text-red-500">
+                  <h2 className="md:block hidden text-4xl font-bold text-red-500 font-evolventa">
                     {service.title}
                   </h2>
-                  <p className="text-gray-300 md:block hidden mt-8 text-xl italic">
+                  <p className="text-gray-300 md:block hidden mt-8 text-xl italic font-evolventa">
                     {service.description}
                   </p>
                   {activeIndex === index && (
@@ -171,20 +171,20 @@ export default function Services() {
                       transition={{ duration: 0.3 }}
                     >
                       <div className="text-gray-100">
-                        <h3 className="text-2xl font-bold text-red-400 mb-4">
+                        <h3 className="text-2xl font-bold text-red-400 mb-4 font-evolventa">
                           Подробнее о {service.title.toLowerCase()}
                         </h3>
-                        <p className="text-gray-300 mb-4">Что входит:</p>
-                        <ul className="list-disc pl-6 space-y-2 text-gray-300">
+                        <p className="text-gray-300 mb-4 font-evolventa">Что входит:</p>
+                        <ul className="list-disc pl-6 space-y-2 text-gray-300 font-evolventa">
                           {service.hiddenContent.items.map((item, idx) => (
-                            <li key={idx}>{item}</li>
+                            <li className="font-evolventa" key={idx}>{item}</li>
                           ))}
                         </ul>
-                        <p className="text-gray-300 mt-4">
-                          <span className="font-bold text-gray-100">Стоимость:</span> {service.price}
+                        <p className="text-gray-300 mt-4 font-evolventa">
+                          <span className="font-bold text-gray-100 font-evolventa">Стоимость:</span> {service.price}
                         </p>
                         <div className="flex items-center gap-4 mt-4">
-                          <button className="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-colors">
+                          <button className="bg-red-500 text-white font-evolventa px-6 py-2 rounded-lg hover:bg-red-600 transition-colors">
                             Связаться с нами
                           </button>
 
@@ -195,12 +195,12 @@ export default function Services() {
                   )}
               
                 </div>
-                <p className="text-gray-300 md:hidden block mt-8 text-xl italic">
+                <p className="text-gray-300 md:hidden block mt-8 text-xl italic font-evolventa">
                     {service.description}
                   </p>
 
                   <button
-                className="text-gray-300 md:hidden flex justify-end mt-2 items-center gap-2 hover:text-red-500 ml-auto"
+                className="text-gray-300 md:hidden flex justify-end mt-2 items-center gap-2 hover:text-red-500 ml-auto font-evolventa"
                 onClick={() => toggleContent(index)}
               >
                 Подробнее
@@ -208,7 +208,7 @@ export default function Services() {
               </button>
               </div>
               <button
-                className="text-gray-300 md:flex hidden justify-center items-center gap-2 hover:text-red-500 ml-4"
+                className="text-gray-300 md:flex hidden justify-center items-center gap-2 hover:text-red-500 ml-4 font-evolventa"
                 onClick={() => toggleContent(index)}
               >
                 Подробнее
