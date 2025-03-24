@@ -6,6 +6,8 @@ import { IoIosArrowDropdown } from "react-icons/io";
 const MotionDiv = dynamic(() => import("framer-motion").then(mod => mod.motion.div), { ssr: false });
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
+import Connect from "../components/Connect";
 
 export default function Services() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -140,6 +142,8 @@ export default function Services() {
   };
 
   return (
+    <div className="bg-black">
+          <NavBar/>
     <div className="bg-black text-white py-12 px-7">
       <div className="max-w mx-auto px-4 sm:px-6 lg:px-8">
         {services.map((service, index) => (
@@ -184,9 +188,7 @@ export default function Services() {
                           <span className="font-bold text-gray-100 font-evolventa">Стоимость:</span> {service.price}
                         </p>
                         <div className="flex items-center gap-4 mt-4">
-                          <button className="bg-red-500 text-white font-evolventa px-6 py-2 rounded-lg hover:bg-red-600 transition-colors">
-                            Связаться с нами
-                          </button>
+                          <Connect/>
 
                         </div>
                       </div>
@@ -221,5 +223,7 @@ export default function Services() {
       <ContactForm />
       <Footer />
     </div>
+    </div>
+
   );
 }

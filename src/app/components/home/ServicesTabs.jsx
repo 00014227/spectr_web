@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { IoChevronDownCircleOutline } from 'react-icons/io5';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const services = [
   {
@@ -55,9 +56,9 @@ export default function ServicesTabs() {
             {services[activeTab].details}
           </pre>
         )}
-        <button className="border font-evolventa border-red-500 px-6 py-2 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2">
+        <Link href="/services" className="border font-evolventa border-red-500 px-6 py-2 rounded-full hover:bg-red-500 transition duration-300 inline-flex items-center gap-2">
           Подробнее <IoChevronDownCircleOutline className="text-2xl" />
-        </button>
+        </Link>
       </motion.div>
     </div>
   );

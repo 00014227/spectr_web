@@ -9,7 +9,6 @@ import NavBar from "./components/NavBar";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Partners from "./components/home/Partners";
-import CaseSlider from "./components/Slider";
 import Link from "next/link";
 
 
@@ -49,7 +48,7 @@ export default function Home() {
         <div className="relative z-40">
           <NavBar className="w-full" />
         </div>
-        <div className="relative flex flex-col items-center justify-center min-h-screen text-white text-center p-6 z-50">
+        <div className="relative flex flex-col items-center justify-center min-h-screen text-white text-center p-6 z-30">
           <Image
             src="/marketing_txt.svg"
             width={600}
