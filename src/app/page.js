@@ -1,4 +1,3 @@
-"use client"
 
 import Image from "next/image";
 import { IoChevronDownCircleOutline } from 'react-icons/io5';
@@ -10,6 +9,7 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Partners from "./components/home/Partners";
 import Link from "next/link";
+import Script from "next/script";
 
 
 const teamMembers = [
@@ -31,17 +31,65 @@ const cases = [
   { src: '/logo/hill.webp', alt: 'Lascala logo' },
   { src: '/logo/tommy.webp', alt: 'Lascala logo' },
 ]
+export const metadata = {
+  title: 'Spectr — Digital агентство полного цикла',
+  description: 'Агентство маркетинга, брендинга, SMM и веб-разработки. Комплексные digital-решения для бизнеса.',
+  keywords: ['маркетинг', 'брендинг', 'SMM', 'веб-разработка', 'агентство', 'digital', 'реклама'],
+  openGraph: {
+    title: 'Spectr — Digital агентство полного цикла',
+    description: 'Маркетинг, брендинг, SMM и веб — всё для роста бизнеса.',
+    url: 'http://spectragency.uz/images/fav.svg',
+    siteName: 'Spectr',
+    images: [
+      {
+        url: 'https://spectr-web-95k6.vercel.app/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Spectr — digital агентство',
+      },
+    ],
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'http://spectragency.uz/',
+  },
+};
+
 
 export default function Home() {
+  
   return (
+    <>
+      <Script
+        id="structured-data"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Spectr Marketing Agency",
+            "url": "http://spectragency.uz/",
+            "logo": "https://spectr-web-95k6.vercel.app/images/logo.png",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+998999444744",
+              "contactType": "Customer Service"
+            },
+            "sameAs": ["https://www.instagram.com/spectr.marketing/"]
+          }),
+        }}
+      />
     <div className="bg-black">
+
       <div className="relative w-full h-screen overflow-hidden">
         <video
           autoPlay
           muted
           loop
+          preload="auto"
           className="absolute 2xl:-top-[21rem] -top-[18rem] left-0 w-full h-full object-cover opacity-75">
-          <source src="/home/sds.mp4" type="video/mp4" />
+          <source src="http://spectragency.uz/video/sds.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div> {/* Overlay for better text visibility */}
@@ -112,5 +160,7 @@ export default function Home() {
       <ContactForm />
       <Footer />
     </div>
+    </>
+
   );
 }
